@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mystatefulset
+spec:
+  serviceName: "mystatefulset"
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mystateful
+  template:
+    metadata:
+      labels:
+        app: mystateful
+    spec:
+      containers:
+      - name: mystateful
+        image: mystatefulimage:latest
+        volumeMounts:
+        - name: mydata
+          mountPath: /data
+  volumeClaimTemplates:
+  - metadata:
+      name: mydata
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
