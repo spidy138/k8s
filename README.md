@@ -4,15 +4,15 @@ Hey, welcome to the world of kubernetes. I hope this page will provide you a gre
 Kubernetes, also known as k8s, is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It provides a way to abstract the underlying infrastructure and manage applications at scale, while also offering flexibility, portability, and a rich feature set
 
 ## Key Concepts of Kubernetes
-Cluster: A group of nodes (machines) that run containerized applications.
-Node: A physical or virtual machine in the cluster that runs containers.
-Pod: The smallest and simplest Kubernetes object that represents a single container or a set of closely related containers.
-Service: An abstraction that defines a set of Pods and a policy to access them.
-Deployment: A controller that manages the deployment of Pods, including updates and scaling.
-DaemonSet: Ensures that a copy of a Pod is running on all or selected nodes.
-StatefulSet: Similar to Deployments, but it provides guarantees about the ordering and uniqueness of Pods.
-Persistent Volume (PV): A piece of storage in the Kubernetes cluster
-Persistent Volume Claim (PVC):  A request for storage by a user. PVCs allow you to request specific amounts of storage and access modes without needing to know the specifics of the underlying storage system.
+Cluster: A group of nodes (machines) that run containerized applications.\
+Node: A physical or virtual machine in the cluster that runs containers.\
+Pod: The smallest and simplest Kubernetes object that represents a single container or a set of closely related containers.\
+Service: An abstraction that defines a set of Pods and a policy to access them.\
+Deployment: A controller that manages the deployment of Pods, including updates and scaling.\
+DaemonSet: Ensures that a copy of a Pod is running on all or selected nodes.\
+StatefulSet: Similar to Deployments, but it provides guarantees about the ordering and uniqueness of Pods.\
+Persistent Volume (PV): A piece of storage in the Kubernetes cluster\
+Persistent Volume Claim (PVC):  A request for storage by a user. PVCs allow you to request specific amounts of storage and access modes without needing to know the specifics of the underlying storage system.\
 
 ### Pod
 A Pod is the basic execution unit in Kubernetes. It contains one or more containers that are tightly coupled and share the same network namespace, which allows them to communicate easily with each other.
