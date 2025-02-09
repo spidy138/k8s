@@ -40,7 +40,7 @@ PVCs can automatically provision storage if configured correctly with StorageCla
 ## Setting up kubernetes cluster
 To set up a Kubernetes cluster, you need to choose a deployment environment, install Kubernetes components on each node, configure networking using a plugin, initialize the master node with kubeadm init, join worker nodes using kubeadm join, deploy applications with manifests, and manage the cluster using kubectl or a management tool
 
-refer [medium setup kubernetes cluster in debian](https://medium.com/@achyuth.payani2000/microcks-mock-api-server-in-kubernetes-d2382d14510a)
+refer [medium setup kubernetes cluster in debian](https://medium.com/@achyuth.payani2000/single-node-kubernetes-cluster-on-debian-1cfe5a768957)
 
 
 
